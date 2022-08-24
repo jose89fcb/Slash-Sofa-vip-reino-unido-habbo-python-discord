@@ -1,3 +1,6 @@
+Puedes obtener este bot sin Slash:
+<a href="https://github.com/jose89fcb/Sofa-vip-reino-unido-habbo-python-discord">https://github.com/jose89fcb/Sofa-vip-reino-unido-habbo-python-discord</a>
+
 <img src="https://i.imgur.com/ExFP4y5.png"><
 <br>
 <br>
