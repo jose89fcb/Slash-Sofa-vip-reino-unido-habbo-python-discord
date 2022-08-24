@@ -1,3 +1,13 @@
+<img src="https://i.imgur.com/ExFP4y5.png"><
+<br>
+<br>
+<img src="https://i.imgur.com/SxqPntc.png">
+<br>
+<br>
+Comando para usar
+/sofahc keko1: .iroke. keko2: diana402
+
+
 
 Necesitas instalar python 3.7: https://www.python.org/downloads/release/python-370/
 
