@@ -50,17 +50,27 @@ async def _sofahc(ctx:SlashContext, keko1:str,keko2:str):
     response = requests.get(f"https://www.habbo.es/api/public/users?name={keko1}")
     response1 = requests.get(f"https://www.habbo.es/api/public/users?name={keko2}")
     
-    habbo = response.json()['figureString']
-    habbo1 = response1.json()['figureString']
+    try:
+
+     habbo = response.json()['figureString']
+    except KeyError:
+        habbo="Keko 1 no existe ❌"
+
+    try:
+
+     habbo1 = response1.json()['figureString']
+    except KeyError:
+      habbo1="keko 2 no existe ❌"
 
    
     
 
     
     
+
+
+    url = "https://www.habbo.com/habbo-imaging/avatarimage?size=l&figure="+habbo+"&action=sit&direction=4&head_direction=4&gesture=std&size=m"
    
-    
-    url = "https://www.habbo.com/habbo-imaging/avatarimage?size=l&figure="+ habbo +"&action=sit&direction=4&head_direction=4&gesture=std&size=m"
     img1 = Image.open(io.BytesIO(requests.get(url).content))
     img1 = img1.resize((64,110), Image.Resampling.LANCZOS)#tamaño del keko 1
     
@@ -108,7 +118,7 @@ async def _sofahc(ctx:SlashContext, keko1:str,keko2:str):
 
         await ctx.send(file=discord.File(fp=image_binary, filename='keko.png'))
 
-        ##TERMINA EL CÓDIGO DEL CANDADO DE HABBO AMOR
+       
 
 
 
